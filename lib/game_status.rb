@@ -31,6 +31,6 @@ def full?(board)
   end
 end
 
-def full?(borad)
+def full?(board)
   board.none?{|index| (" " || "")}
 end
