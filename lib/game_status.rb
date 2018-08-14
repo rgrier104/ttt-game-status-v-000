@@ -29,7 +29,7 @@ def full?(board)
   board.none?{|index| (index == " " || index == "")}
 end
 
-def draw(board)
+def draw?(board)
   if full?(board) && !won?(board)
   end
 end
