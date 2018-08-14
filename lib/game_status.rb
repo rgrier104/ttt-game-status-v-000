@@ -45,11 +45,13 @@ end
 end
 
 def winner(board)
-  if won?(board).include?("X")
+  win_combo = []
+  win_combo = won?(board)
+  if win_combo[0] == "X"
     return "X"
-  elsif won?(board).include?("O")
+  elsif win_combo[0] == "O"
     return "O"
   else
     return false
   end
-end
+end 
