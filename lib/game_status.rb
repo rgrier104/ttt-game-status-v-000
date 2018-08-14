@@ -32,5 +32,5 @@ def full?(board)
 end
 
 def full?(board)
-  board.none?{|index| (" " || "")}
+  board.none?{|index| (index == " " || index == "")}
 end
