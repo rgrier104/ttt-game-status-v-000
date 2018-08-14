@@ -26,11 +26,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |index|
-    position_taken?(board,index)
-  end
+  board.none?{|index| (index == " " || index == "")}
 end
 
-def full?(board)
-  board.none?{|index| (index == " " || index == "")}
+def draw(board)
+  if full?(board) && !won?(board)
+  end
 end
