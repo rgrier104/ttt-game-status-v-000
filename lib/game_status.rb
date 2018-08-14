@@ -43,3 +43,9 @@ def over?(board)
     return false
 end
 end
+
+def winner(board)
+  won?(board).find do |index|
+    board[index]
+  end
+end
